@@ -118,7 +118,7 @@ struct ServerUserDetailsView: View {
                 }
             }
         }
-        .navigationTitle(L10n.user)
+        .navigationTitle(L10n.user.localizedLowercase)
         .onAppear {
             viewModel.send(.refresh)
         }

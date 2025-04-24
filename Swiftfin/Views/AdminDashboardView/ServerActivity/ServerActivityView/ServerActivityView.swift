@@ -46,7 +46,7 @@ struct ServerActivityView: View {
             }
         }
         .animation(.linear(duration: 0.2), value: viewModel.state)
-        .navigationTitle(L10n.activity)
+        .navigationTitle(L10n.activity.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarMenuButton(
             isLoading: viewModel.backgroundStates.contains(.gettingNextPage)

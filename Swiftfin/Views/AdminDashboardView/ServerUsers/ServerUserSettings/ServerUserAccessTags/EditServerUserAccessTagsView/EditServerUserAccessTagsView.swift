@@ -76,7 +76,7 @@ struct EditServerUserAccessTagsView: View {
                 errorView(with: error)
             }
         }
-        .navigationTitle(L10n.accessTags)
+        .navigationTitle(L10n.accessTags.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(isEditing)
         .toolbar {

@@ -75,7 +75,7 @@ struct DeviceDetailsView: View {
 
             CapabilitiesSection(device: viewModel.device)
         }
-        .navigationTitle(L10n.device)
+        .navigationTitle(L10n.device.localizedCapitalized)
         .onReceive(viewModel.events) { event in
             switch event {
             case let .error(eventError):

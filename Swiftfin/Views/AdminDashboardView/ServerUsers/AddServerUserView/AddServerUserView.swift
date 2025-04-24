@@ -106,7 +106,7 @@ struct AddServerUserView: View {
         }
         .animation(.linear(duration: 0.2), value: isValid)
         .interactiveDismissDisabled(viewModel.state == .creatingUser)
-        .navigationTitle(L10n.newUser)
+        .navigationTitle(L10n.newUser.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarCloseButton {
             router.dismissCoordinator()

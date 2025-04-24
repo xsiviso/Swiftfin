@@ -60,7 +60,7 @@ struct EditServerTaskView: View {
         .animation(.linear(duration: 0.2), value: observer.state)
         .animation(.linear(duration: 0.1), value: observer.task.state)
         .animation(.linear(duration: 0.1), value: observer.task.triggers)
-        .navigationTitle(L10n.task)
+        .navigationTitle(L10n.task.localizedCapitalized)
         .topBarTrailing {
 
             if observer.backgroundStates.contains(.updatingTriggers) {

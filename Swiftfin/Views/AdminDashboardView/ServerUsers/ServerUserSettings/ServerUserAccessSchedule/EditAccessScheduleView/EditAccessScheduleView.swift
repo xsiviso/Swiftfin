@@ -57,7 +57,7 @@ struct EditAccessScheduleView: View {
 
     var body: some View {
         contentView
-            .navigationTitle(L10n.accessSchedules)
+            .navigationTitle(L10n.accessSchedules.localizedCapitalized)
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarBackButtonHidden(isEditing)
             .toolbar {

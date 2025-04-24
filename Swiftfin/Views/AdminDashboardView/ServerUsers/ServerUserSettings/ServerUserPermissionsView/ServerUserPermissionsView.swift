@@ -47,7 +47,7 @@ struct ServerUserPermissionsView: View {
 
     var body: some View {
         contentView
-            .navigationTitle(L10n.permissions)
+            .navigationTitle(L10n.permissions.localizedCapitalized)
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarCloseButton {
                 router.dismissCoordinator()

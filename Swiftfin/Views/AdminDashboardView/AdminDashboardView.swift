@@ -54,7 +54,7 @@ struct AdminDashboardView: View {
                 }
             }
         }
-        .navigationTitle(L10n.dashboard)
+        .navigationTitle(L10n.dashboard.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
     }
 }

@@ -118,6 +118,6 @@ struct ActiveSessionDetailView: View {
             }
         }
         .animation(.linear(duration: 0.2), value: box.value)
-        .navigationTitle(L10n.session)
+        .navigationTitle(L10n.session.localizedCapitalized)
     }
 }

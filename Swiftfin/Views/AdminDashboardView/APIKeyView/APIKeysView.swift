@@ -46,7 +46,7 @@ struct APIKeysView: View {
         }
         .animation(.linear(duration: 0.2), value: viewModel.state)
         .animation(.linear(duration: 0.1), value: viewModel.apiKeys)
-        .navigationTitle(L10n.apiKeys)
+        .navigationTitle(L10n.apiKeys.localizedCapitalized)
         .onFirstAppear {
             viewModel.send(.getAPIKeys)
         }

@@ -51,7 +51,7 @@ struct ServerUserLiveTVAccessView: View {
 
     var body: some View {
         contentView
-            .navigationTitle(L10n.tvAccess)
+            .navigationTitle(L10n.tvAccess.localizedCapitalized)
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarCloseButton {
                 router.dismissCoordinator()

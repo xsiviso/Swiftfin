@@ -60,7 +60,7 @@ struct LearnMoreButton: View {
                 }
                 .edgePadding(.horizontal)
             }
-            .navigationTitle(title)
+            .navigationTitle(title.localizedCapitalized)
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarCloseButton {
                 isPresented = false

@@ -69,7 +69,7 @@ struct ActiveSessionsView: View {
             }
         }
         .animation(.linear(duration: 0.2), value: viewModel.state)
-        .navigationTitle(L10n.sessions)
+        .navigationTitle(L10n.sessions.localizedCapitalized)
         .onFirstAppear {
             viewModel.send(.refreshSessions)
         }

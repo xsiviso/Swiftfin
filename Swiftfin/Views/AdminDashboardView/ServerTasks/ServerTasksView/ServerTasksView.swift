@@ -93,7 +93,7 @@ struct ServerTasksView: View {
             }
         }
         .animation(.linear(duration: 0.2), value: viewModel.state)
-        .navigationTitle(L10n.tasks)
+        .navigationTitle(L10n.tasks.localizedCapitalized)
         .onFirstAppear {
             viewModel.send(.refreshTasks)
         }
