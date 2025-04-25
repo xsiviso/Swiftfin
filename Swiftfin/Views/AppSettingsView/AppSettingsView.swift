@@ -88,7 +88,7 @@ struct AppSettingsView: View {
             }
         }
         .animation(.linear, value: selectUserUseSplashscreen)
-        .navigationTitle(L10n.advanced)
+        .navigationTitle(L10n.advanced.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarCloseButton {
             router.dismissCoordinator()

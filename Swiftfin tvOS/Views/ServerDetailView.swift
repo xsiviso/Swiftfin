@@ -78,7 +78,7 @@ struct EditServerView: View {
                     }
                 }
             }
-            .navigationTitle(L10n.server)
+            .navigationTitle(L10n.server.localizedCapitalized)
             .alert(L10n.deleteServer, isPresented: $isPresentingConfirmDeletion) {
                 Button(L10n.delete, role: .destructive) {
                     viewModel.delete()

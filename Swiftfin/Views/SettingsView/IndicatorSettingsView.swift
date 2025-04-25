@@ -35,6 +35,6 @@ struct IndicatorSettingsView: View {
                 Toggle(L10n.played, isOn: $showPlayed)
             }
         }
-        .navigationTitle(L10n.indicators)
+        .navigationTitle(L10n.indicators.localizedCapitalized)
     }
 }

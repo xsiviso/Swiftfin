@@ -85,7 +85,7 @@ struct MediaView: View {
         }
         .animation(.linear(duration: 0.1), value: viewModel.state)
         .ignoresSafeArea()
-        .navigationTitle(L10n.allMedia)
+        .navigationTitle(L10n.allMedia.localizedCapitalized)
         .topBarTrailing {
             if viewModel.state == .refreshing {
                 ProgressView()

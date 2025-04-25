@@ -71,7 +71,7 @@ struct IdentifyItemView: View {
                 ProgressView()
             }
         }
-        .navigationTitle(L10n.identify)
+        .navigationTitle(L10n.identify.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(viewModel.state == .updating)
         .sheet(item: $selectedResult) {

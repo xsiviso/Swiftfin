@@ -97,6 +97,6 @@ struct CustomDeviceProfileSettingsView: View {
                     }
                 }
             }
-            .navigationTitle(L10n.profiles)
+            .navigationTitle(L10n.profiles.localizedCapitalized)
     }
 }

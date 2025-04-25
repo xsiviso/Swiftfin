@@ -80,7 +80,7 @@ struct HomeView: View {
         .onFirstAppear {
             viewModel.send(.refresh)
         }
-        .navigationTitle(L10n.home)
+        .navigationTitle(L10n.home.localizedCapitalized)
         .topBarTrailing {
 
             if viewModel.backgroundStates.contains(.refresh) {

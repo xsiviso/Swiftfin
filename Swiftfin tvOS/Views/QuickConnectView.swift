@@ -64,7 +64,7 @@ struct QuickConnectView: View {
         }
         .animation(.linear(duration: 0.1), value: viewModel.state)
         .edgePadding()
-        .navigationTitle(L10n.quickConnect)
+        .navigationTitle(L10n.quickConnect.localizedCapitalized)
         .onFirstAppear {
             viewModel.start()
         }

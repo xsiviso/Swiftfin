@@ -58,7 +58,7 @@ struct QuickConnectView: View {
             }
         }
         .edgePadding()
-        .navigationTitle(L10n.quickConnect)
+        .navigationTitle(L10n.quickConnect.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .onFirstAppear {
             viewModel.start()

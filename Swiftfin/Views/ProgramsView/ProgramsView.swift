@@ -138,7 +138,7 @@ struct ProgramsView: View {
                 DelayedProgressView()
             }
         }
-        .navigationTitle(L10n.liveTV)
+        .navigationTitle(L10n.liveTV.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .onFirstAppear {
             if programsViewModel.state == .initial {

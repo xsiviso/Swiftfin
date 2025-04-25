@@ -92,7 +92,7 @@ extension IdentifyItemView {
 
                     resultDetails
                 }
-                .navigationTitle(L10n.identify)
+                .navigationTitle(L10n.identify.localizedCapitalized)
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationBarCloseButton {
                     onClose()

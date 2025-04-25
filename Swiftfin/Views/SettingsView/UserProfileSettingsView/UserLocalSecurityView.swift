@@ -165,7 +165,7 @@ struct UserLocalSecurityView: View {
             }
         }
         .animation(.linear, value: signInPolicy)
-        .navigationTitle(L10n.security)
+        .navigationTitle(L10n.security.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .onFirstAppear {
             pinHint = viewModel.userSession.user.pinHint

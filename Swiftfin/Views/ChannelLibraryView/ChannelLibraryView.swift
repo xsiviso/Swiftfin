@@ -135,7 +135,7 @@ struct ChannelLibraryView: View {
                 DelayedProgressView()
             }
         }
-        .navigationTitle(L10n.channels)
+        .navigationTitle(L10n.channels.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .onChange(of: channelDisplayType) { newValue in
             if UIDevice.isPhone {

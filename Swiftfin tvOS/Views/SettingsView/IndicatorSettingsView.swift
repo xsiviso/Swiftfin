@@ -43,6 +43,6 @@ struct IndicatorSettingsView: View {
                     Toggle(L10n.showWatched, isOn: $showWatched)
                 }
             }
-            .navigationTitle(L10n.indicators)
+            .navigationTitle(L10n.indicators.localizedCapitalized)
     }
 }

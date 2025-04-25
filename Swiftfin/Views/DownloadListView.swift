@@ -19,7 +19,7 @@ struct DownloadListView: View {
                 DownloadTaskRow(downloadTask: item)
             }
         }
-        .navigationTitle(L10n.downloads)
+        .navigationTitle(L10n.downloads.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
     }
 }

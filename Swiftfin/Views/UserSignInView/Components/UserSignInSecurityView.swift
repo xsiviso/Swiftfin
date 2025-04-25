@@ -93,7 +93,7 @@ extension UserSignInView {
                 }
             }
             .animation(.linear, value: accessPolicy)
-            .navigationTitle(L10n.security)
+            .navigationTitle(L10n.security.localizedCapitalized)
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarCloseButton {
                 router.popLast()

@@ -178,6 +178,6 @@ struct CustomizeViewsSettings: View {
                 L10n.episodeLandscapePoster.text
             }
         }
-        .navigationTitle(L10n.customize)
+        .navigationTitle(L10n.customize.localizedCapitalized)
     }
 }

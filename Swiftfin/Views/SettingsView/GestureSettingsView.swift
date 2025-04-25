@@ -57,6 +57,6 @@ struct GestureSettingsView: View {
                 CaseIterablePicker(L10n.rightVerticalPan, selection: $verticalPanGestureRight)
             }
         }
-        .navigationTitle(L10n.gestures)
+        .navigationTitle(L10n.gestures.localizedCapitalized)
     }
 }

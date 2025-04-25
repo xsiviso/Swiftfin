@@ -16,6 +16,6 @@ struct ExperimentalSettingsView: View {
 
     var body: some View {
         Form {}
-            .navigationTitle(L10n.experimental)
+            .navigationTitle(L10n.experimental.localizedCapitalized)
     }
 }

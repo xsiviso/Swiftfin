@@ -93,7 +93,7 @@ struct PlaybackSettingsView: View {
                 }
             }
         }
-        .navigationTitle(L10n.playback)
+        .navigationTitle(L10n.playback.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarCloseButton {
             splitContentViewProxy.hide()

@@ -23,6 +23,6 @@ struct ExperimentalSettingsView: View {
                     .frame(maxWidth: 400)
             }
             .contentView {}
-            .navigationTitle(L10n.experimental)
+            .navigationTitle(L10n.experimental.localizedCapitalized)
     }
 }

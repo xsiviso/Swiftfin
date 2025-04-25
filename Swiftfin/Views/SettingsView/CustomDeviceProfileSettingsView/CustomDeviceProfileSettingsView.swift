@@ -69,7 +69,7 @@ struct CustomDeviceProfileSettingsView: View {
                 .onDelete(perform: removeProfile)
             }
         }
-        .navigationTitle(L10n.profiles)
+        .navigationTitle(L10n.profiles.localizedCapitalized)
         .topBarTrailing {
             if customProfiles.isNotEmpty {
                 Button(L10n.add) {

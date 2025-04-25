@@ -52,7 +52,7 @@ struct ServerUsersView: View {
             }
         }
         .animation(.linear(duration: 0.2), value: viewModel.state)
-        .navigationTitle(L10n.users)
+        .navigationTitle(L10n.users.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(isEditing)
         .toolbar {

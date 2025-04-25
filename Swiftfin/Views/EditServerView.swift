@@ -61,7 +61,7 @@ struct EditServerView: View {
                 .foregroundStyle(.red, .red.opacity(0.2))
             }
         }
-        .navigationTitle(L10n.server)
+        .navigationTitle(L10n.server.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .onChange(of: currentServerURL) { newValue in
             viewModel.setCurrentURL(to: newValue)

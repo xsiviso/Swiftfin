@@ -465,7 +465,7 @@ struct SelectUserView: View {
             }
         }
         .ignoresSafeArea(.keyboard, edges: .bottom)
-        .navigationTitle(L10n.users)
+        .navigationTitle(L10n.users.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .principal) {

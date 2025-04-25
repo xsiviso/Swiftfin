@@ -111,7 +111,7 @@ struct SettingsView: View {
 
             #endif
         }
-        .navigationTitle(L10n.settings)
+        .navigationTitle(L10n.settings.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarCloseButton {
             router.dismissCoordinator()

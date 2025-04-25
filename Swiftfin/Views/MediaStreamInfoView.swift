@@ -37,6 +37,6 @@ struct MediaStreamInfoView: View {
                 }
             }
         }
-        .navigationTitle(mediaStream.displayTitle ?? .emptyDash)
+        .navigationTitle(mediaStream.displayTitle ?? .emptyDash.localizedCapitalized)
     }
 }

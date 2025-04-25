@@ -72,7 +72,7 @@ struct AddItemElementView<Element: Hashable>: View {
                 ErrorView(error: error)
             }
         }
-        .navigationTitle(type.displayTitle)
+        .navigationTitle(type.displayTitle.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarCloseButton {
             router.dismissCoordinator()

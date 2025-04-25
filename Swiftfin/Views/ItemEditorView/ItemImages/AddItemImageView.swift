@@ -68,7 +68,7 @@ struct AddItemImageView: View {
             }
         }
         .animation(.linear(duration: 0.1), value: remoteImageInfoViewModel.state)
-        .navigationTitle(remoteImageInfoViewModel.imageType.displayTitle)
+        .navigationTitle(remoteImageInfoViewModel.imageType.displayTitle.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(viewModel.backgroundStates.contains(.updating))
         .navigationBarMenuButton(isLoading: viewModel.backgroundStates.contains(.updating)) {

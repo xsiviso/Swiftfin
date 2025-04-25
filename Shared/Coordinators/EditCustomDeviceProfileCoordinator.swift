@@ -34,24 +34,24 @@ final class EditCustomDeviceProfileCoordinator: NavigationCoordinatable {
     @ViewBuilder
     func makeCustomDeviceAudioEditor(selection: Binding<[AudioCodec]>) -> some View {
         OrderedSectionSelectorView(selection: selection, sources: AudioCodec.allCases)
-            .navigationTitle(L10n.audio)
+            .navigationTitle(L10n.audio.localizedCapitalized)
     }
 
     @ViewBuilder
     func makeCustomDeviceVideoEditor(selection: Binding<[VideoCodec]>) -> some View {
         OrderedSectionSelectorView(selection: selection, sources: VideoCodec.allCases)
-            .navigationTitle(L10n.video)
+            .navigationTitle(L10n.video.localizedCapitalized)
     }
 
     @ViewBuilder
     func makeCustomDeviceContainerEditor(selection: Binding<[MediaContainer]>) -> some View {
         OrderedSectionSelectorView(selection: selection, sources: MediaContainer.allCases)
-            .navigationTitle(L10n.containers)
+            .navigationTitle(L10n.containers.localizedCapitalized)
     }
 
     @ViewBuilder
     func makeStart() -> some View {
         CustomDeviceProfileSettingsView.EditCustomDeviceProfileView(profile: profile)
-            .navigationTitle(L10n.customProfile)
+            .navigationTitle(L10n.customProfile.localizedCapitalized)
     }
 }

@@ -76,6 +76,6 @@ struct CustomizeViewsSettings: View {
 
                 HomeSection()
             }
-            .navigationTitle(L10n.customize)
+            .navigationTitle(L10n.customize.localizedCapitalized)
     }
 }

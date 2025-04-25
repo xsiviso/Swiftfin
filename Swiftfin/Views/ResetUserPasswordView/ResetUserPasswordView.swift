@@ -135,7 +135,7 @@ struct ResetUserPasswordView: View {
         }
         .interactiveDismissDisabled(viewModel.state == .resetting)
         .navigationBarBackButtonHidden(viewModel.state == .resetting)
-        .navigationTitle(L10n.password)
+        .navigationTitle(L10n.password.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarCloseButton {
             router.dismissCoordinator()

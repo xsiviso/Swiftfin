@@ -126,7 +126,7 @@ struct ItemView: View {
             switch viewModel.state {
             case .content:
                 contentView
-                    .navigationTitle(viewModel.item.displayTitle)
+                    .navigationTitle(viewModel.item.displayTitle.localizedCapitalized)
             case let .error(error):
                 ErrorView(error: error)
             case .initial, .refreshing:

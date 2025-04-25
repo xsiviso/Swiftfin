@@ -22,7 +22,7 @@ struct DebugSettingsView: View {
 
             Toggle("Send Progress Reports", isOn: $sendProgressReports)
         }
-        .navigationTitle("Debug")
+        .navigationTitle("Debug".localizedCapitalized)
     }
 }
 #endif

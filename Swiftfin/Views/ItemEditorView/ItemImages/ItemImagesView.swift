@@ -55,7 +55,7 @@ struct ItemImagesView: View {
                     }
             }
         }
-        .navigationTitle(L10n.images)
+        .navigationTitle(L10n.images.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .onFirstAppear {
             viewModel.send(.refresh)

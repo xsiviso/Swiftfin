@@ -36,7 +36,7 @@ struct ItemOverviewView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .edgePadding()
         }
-        .navigationTitle(item.displayTitle)
+        .navigationTitle(item.displayTitle.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarCloseButton {
             router.dismissCoordinator()

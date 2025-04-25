@@ -91,6 +91,6 @@ struct AppSettingsView: View {
                     router.route(to: \.log)
                 }
             }
-            .navigationTitle(L10n.advanced)
+            .navigationTitle(L10n.advanced.localizedCapitalized)
     }
 }

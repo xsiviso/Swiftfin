@@ -163,7 +163,7 @@ struct UserLocalSecurityView: View {
                 }
             }
             .animation(.linear, value: signInPolicy)
-            .navigationTitle(L10n.security)
+            .navigationTitle(L10n.security.localizedCapitalized)
             .onFirstAppear {
                 pinHint = viewModel.userSession.user.pinHint
                 signInPolicy = viewModel.userSession.user.accessPolicy

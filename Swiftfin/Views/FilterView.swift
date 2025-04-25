@@ -30,7 +30,7 @@ struct FilterView: View {
             sources: viewModel.allFilters[keyPath: type.collectionAnyKeyPath],
             type: type.selectorType
         )
-        .navigationTitle(type.displayTitle)
+        .navigationTitle(type.displayTitle.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarCloseButton {
             router.dismissCoordinator()

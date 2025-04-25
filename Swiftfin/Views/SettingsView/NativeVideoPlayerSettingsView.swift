@@ -32,6 +32,6 @@ struct NativeVideoPlayerSettingsView: View {
                 Text(L10n.resumeOffsetDescription)
             }
         }
-        .navigationTitle(L10n.nativePlayer)
+        .navigationTitle(L10n.nativePlayer.localizedCapitalized)
     }
 }

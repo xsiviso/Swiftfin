@@ -160,7 +160,7 @@ struct ConnectToServerView: View {
             localServersSection
         }
         .interactiveDismissDisabled(viewModel.state == .connecting)
-        .navigationTitle(L10n.connect)
+        .navigationTitle(L10n.connect.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarCloseButton(disabled: viewModel.state == .connecting) {
             router.popLast()

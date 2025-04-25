@@ -170,7 +170,7 @@ final class SettingsCoordinator: NavigationCoordinatable {
 
     func makeItemFilterDrawerSelector(selection: Binding<[ItemFilterType]>) -> some View {
         OrderedSectionSelectorView(selection: selection, sources: ItemFilterType.allCases)
-            .navigationTitle(L10n.filters)
+            .navigationTitle(L10n.filters.localizedCapitalized)
     }
 
     func makeVideoPlayerSettings() -> VideoPlayerSettingsCoordinator {

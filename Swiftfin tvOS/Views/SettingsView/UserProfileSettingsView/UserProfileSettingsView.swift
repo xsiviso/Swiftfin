@@ -70,7 +70,7 @@ struct UserProfileSettingsView: View {
 //                Text(L10n.resetSettingsDescription)
 //            }
             }
-            .navigationTitle(L10n.user)
+            .navigationTitle(L10n.user.localizedCapitalized)
             .confirmationDialog(
                 L10n.resetSettings,
                 isPresented: $isPresentingConfirmReset,

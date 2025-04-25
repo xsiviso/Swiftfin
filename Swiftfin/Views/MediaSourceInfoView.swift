@@ -55,7 +55,7 @@ struct MediaSourceInfoView: View {
                 }
             }
         }
-        .navigationTitle(source.displayTitle)
+        .navigationTitle(source.displayTitle.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarCloseButton {
             router.dismissCoordinator()

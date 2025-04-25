@@ -154,7 +154,7 @@ struct SearchView: View {
             .transition(.opacity.animation(.linear(duration: 0.1)))
         }
         .ignoresSafeArea(.keyboard, edges: .bottom)
-        .navigationTitle(L10n.search)
+        .navigationTitle(L10n.search.localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarFilterDrawer(
             viewModel: viewModel.filterViewModel,

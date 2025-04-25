@@ -57,6 +57,6 @@ struct VideoPlayerSettingsView: View {
 
             TransitionSection()
         }
-        .navigationTitle(L10n.videoPlayer)
+        .navigationTitle(L10n.videoPlayer.localizedCapitalized)
     }
 }

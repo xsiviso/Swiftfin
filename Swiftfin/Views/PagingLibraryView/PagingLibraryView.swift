@@ -318,7 +318,7 @@ struct PagingLibraryView<Element: Poster>: View {
         .onSizeChanged { _, safeArea in
             self.safeArea = safeArea
         }
-        .navigationTitle(viewModel.parent?.displayTitle ?? "")
+        .navigationTitle(viewModel.parent?.displayTitle ?? "".localizedCapitalized)
         .navigationBarTitleDisplayMode(.inline)
         .ifLet(viewModel.filterViewModel) { view, filterViewModel in
             view.navigationBarFilterDrawer(

@@ -77,7 +77,7 @@ struct ItemImageDetailsView: View {
     var body: some View {
         NavigationView {
             contentView
-                .navigationTitle(L10n.image)
+                .navigationTitle(L10n.image.localizedCapitalized)
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationBarCloseButton {
                     onClose()
