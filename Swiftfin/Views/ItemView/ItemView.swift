@@ -131,13 +131,8 @@ struct ItemView: View {
         ZStack {
             switch viewModel.state {
             case .content:
-<<<<<<< HEAD
-                contentView
-                    .navigationTitle(viewModel.item.displayTitle.localizedCapitalized)
-=======
                 innerBody
                     .navigationTitle(viewModel.item.displayTitle)
->>>>>>> main
             case let .error(error):
                 ErrorView(error: error)
             case .initial, .refreshing:
